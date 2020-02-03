@@ -15,5 +15,9 @@ namespace ar259015MIS4200.DAL
         }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<customer> Customers { get; set; }
+        public DbSet<Products> Products { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
+       
     }
 }
