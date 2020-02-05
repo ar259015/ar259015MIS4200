@@ -14,6 +14,7 @@ namespace ar259015MIS4200.Models
         public string firstName { get; set; }
         public string lastName { get; set; }
         public DateTime petSince { get; set; }
+        public string Breed { get; set; }
         public ICollection<PetDetails> PetDetails { get; set; }
     }
 }

@@ -265,11 +265,6 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
-    <Content Include="Views\Pets\Create.cshtml" />
-    <Content Include="Views\Pets\Delete.cshtml" />
-    <Content Include="Views\Pets\Details.cshtml" />
-    <Content Include="Views\Pets\Edit.cshtml" />
-    <Content Include="Views\Pets\Index.cshtml" />
     <Content Include="Views\Vets\Create.cshtml" />
     <Content Include="Views\Vets\Delete.cshtml" />
     <Content Include="Views\Vets\Details.cshtml" />
@@ -280,6 +275,11 @@
     <Content Include="Views\PetDetails\Details.cshtml" />
     <Content Include="Views\PetDetails\Edit.cshtml" />
     <Content Include="Views\PetDetails\Index.cshtml" />
+    <Content Include="Views\Pets\Create.cshtml" />
+    <Content Include="Views\Pets\Delete.cshtml" />
+    <Content Include="Views\Pets\Details.cshtml" />
+    <Content Include="Views\Pets\Edit.cshtml" />
+    <Content Include="Views\Pets\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
