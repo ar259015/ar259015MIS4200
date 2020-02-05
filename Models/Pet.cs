@@ -10,6 +10,7 @@ namespace ar259015MIS4200.Models
     {
         [Key]
         public int petID { get; set; }
+        [Display(Name ="First Name")]
         public string firstName { get; set; }
         public string lastName { get; set; }
         public DateTime petSince { get; set; }

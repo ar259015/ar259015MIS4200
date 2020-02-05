@@ -22,6 +22,8 @@ namespace ar259015MIS4200.DAL
         public DbSet<Pet> Pets { get; set; }
         public DbSet<Vet> Vets { get; set; }
         public DbSet<PetDetails> PetDetails { get; set; }
+
+        // add this method it will be used later
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
