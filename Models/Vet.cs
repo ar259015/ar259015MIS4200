@@ -9,7 +9,7 @@ namespace ar259015MIS4200.Models
     public class Vet
     {
         public int vetID { get; set; }
-        [Display(Name ="First Name")]
+        [Display(Name ="Vet First Name")]
         public string firstName { get; set; }
         [Display(Name ="Last Name")]
         public string lastName { get; set; }
