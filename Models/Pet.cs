@@ -11,11 +11,20 @@ namespace ar259015MIS4200.Models
         [Key]
         public int petID { get; set; }
         [Display(Name = "Pet First Name")]
+        [Required(ErrorMessage = "Pet first name is required")]
+        [StringLength(20)]
         public string firstName { get; set; }
         [Display(Name = "Pet Last Name")]
+        [Required(ErrorMessage ="Pet last name is required")]
+        [StringLength(20)]
         public string lastName { get; set; }
-        [Display(Name = "Pet Since")]
+        [Display(Name = "When did you join us?")]
+        [Required]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime petSince { get; set; }
+        [Display(Name = "Breed of your pet")]
+        [Required]
         public string Breed { get; set; }
         public ICollection<PetDetails> PetDetails { get; set; }
         
