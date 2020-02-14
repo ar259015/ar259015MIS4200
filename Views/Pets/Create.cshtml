@@ -10,7 +10,6 @@
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-    
     <div class="form-horizontal">
         <h4>Pet</h4>
         <hr />
@@ -53,12 +52,12 @@
             </div>
         </div>
     </div>
-}
+    }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

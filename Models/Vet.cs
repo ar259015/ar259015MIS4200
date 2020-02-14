@@ -23,5 +23,13 @@ namespace ar259015MIS4200.Models
             ErrorMessage = "Phone numbers must be in the format (xxx) xxx-xxxx or xxx-xxx-xxxx")]
         public string phone { get; set; }
         public ICollection<PetDetails> PetDetails { get; set; }
+
+        public string fullName
+        {
+            get
+            {
+                return lastName + ", " + firstName;
+            }
+        }
     }
 }

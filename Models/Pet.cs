@@ -27,6 +27,14 @@ namespace ar259015MIS4200.Models
         [Required]
         public string Breed { get; set; }
         public ICollection<PetDetails> PetDetails { get; set; }
-        
+
+        public string fullName
+        {
+            get
+            {
+                return lastName + ", " + firstName;
+            }
+        }
+
     }
 }

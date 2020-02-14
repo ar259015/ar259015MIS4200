@@ -40,8 +40,8 @@ namespace ar259015MIS4200.Controllers
         // GET: PetDetails/Create
         public ActionResult Create()
         {
-            ViewBag.petID = new SelectList(db.Pets, "petID", "firstName");
-            ViewBag.vetId = new SelectList(db.Vets, "vetID", "firstName");
+            ViewBag.petID = new SelectList(db.Pets, "petID", "fullName");
+            ViewBag.vetId = new SelectList(db.Vets, "vetID", "fullName");
             return View();
         }
 
@@ -59,8 +59,8 @@ namespace ar259015MIS4200.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.petID = new SelectList(db.Pets, "petID", "firstName", petDetails.petID);
-            ViewBag.vetId = new SelectList(db.Vets, "vetID", "firstName", petDetails.vetId);
+            ViewBag.petID = new SelectList(db.Pets, "petID", "fullName", petDetails.petID);
+            ViewBag.vetId = new SelectList(db.Vets, "vetID", "fullName", petDetails.vetId);
             return View(petDetails);
         }
 
@@ -76,8 +76,8 @@ namespace ar259015MIS4200.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.petID = new SelectList(db.Pets, "petID", "firstName", petDetails.petID);
-            ViewBag.vetId = new SelectList(db.Vets, "vetID", "firstName", petDetails.vetId);
+            ViewBag.petID = new SelectList(db.Pets, "petID", "fullName", petDetails.petID);
+            ViewBag.vetId = new SelectList(db.Vets, "vetID", "fullName", petDetails.vetId);
             return View(petDetails);
         }
 
@@ -94,8 +94,8 @@ namespace ar259015MIS4200.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.petID = new SelectList(db.Pets, "petID", "firstName", petDetails.petID);
-            ViewBag.vetId = new SelectList(db.Vets, "vetID", "firstName", petDetails.vetId);
+            ViewBag.petID = new SelectList(db.Pets, "petID", "fullName", petDetails.petID);
+            ViewBag.vetId = new SelectList(db.Vets, "vetID", "fullName", petDetails.vetId);
             return View(petDetails);
         }
 

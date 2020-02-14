@@ -25,5 +25,6 @@ namespace ar259015MIS4200.Models
         public virtual Pet Pet { get; set; }
         public int vetId { get; set; }
         public virtual Vet Vet { get; set; }
+        
     }
 }
